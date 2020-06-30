@@ -3,6 +3,16 @@
   import Main from '../components/Main.svelte'
   import Sidebar from '../components/Sidebar.svelte'
   import TimeLine from '../components/TimeLine.svelte'
+  import { onMount } from 'svelte'
+
+  let data = {}
+  const API = "http://localhost:8080/public/api/posts.json"
+
+  onMount(async()=>{
+    const response = await fetch(API)
+    data = await response.json();
+  })
+
 </script>
 
 <style>
@@ -24,6 +34,6 @@
 
 <Header/>
   <Main>
-    <TimeLine/>
-    <Sidebar/>
+    <TimeLine posts={data.posts}/>
+    <Sidebar {...data.user}/>
   </Main>

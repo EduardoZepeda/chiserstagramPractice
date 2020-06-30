@@ -1,0 +1,117 @@
+{
+   "user":{
+      "nickname":"neon_affogato",
+      "name":"Eduardo Zepeda"
+   },
+   "posts":[
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"Quierom jamom serranom",
+         "comments":[
+            {
+               "id":123234535,
+               "text":"¡Hola Kyoko hermosa!",
+               "username":"Sui Azanza"
+            },
+            {
+               "id":1232322312,
+               "text":"Hola mi kyokito bonita",
+               "username":"Soledad Lechuza"
+            }
+         ]
+      },
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko1.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"Zzzz...",
+         "comments":[
+            {
+               "id":123234535,
+               "text":"Floja, solo salimos 5 minutos",
+               "username":"neon_affogato"
+            }
+         ]
+      },
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko2.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"Mi boloña hermana kKarenina",
+         "comments":[
+
+         ]
+      },
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko3.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"Que me ves, ¡guau!",
+         "comments":[
+
+         ]
+      },
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko4.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"Mi amigo Pato",
+         "comments":[
+
+         ]
+      },
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko5.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"El perro de la barista, no me llevaron uwu",
+         "comments":[
+
+         ]
+      },
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko6.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"Tengo sueñom",
+         "comments":[
+
+         ]
+      },
+      {
+         "username":"Kyoko",
+         "location":"Bangkok, Thailand",
+         "avatar":"http://localhost:8080/public/images/kyoko.jpg",
+         "photo":"http://localhost:8080/public/images/kyoko7.jpg",
+         "like":false,
+         "bookmark":false,
+         "postComment":"Pachola ;_;",
+         "comments":[
+
+         ]
+      }
+   ]
+}
