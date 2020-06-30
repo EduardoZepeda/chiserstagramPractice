@@ -1,3 +1,31 @@
+<script>
+  import {likeCount} from '../store/store.js'
+</script>
+
+
+
+<div class="Header">
+  <div class="Header-container">
+    <div class="Header-content">
+      <div class="Header-logo">
+        <h1>Chiserstagram</h1>
+      </div>
+      <div class="Header-nav">
+        <ul>
+          <li>
+            <i class="fas fa-heart"/>
+            {$likeCount === 0 ? '': $likeCount}
+          </li>
+          <li>
+            <i class="fas fa-user-alt"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <style>
   .Header {
     background-color: white;
@@ -55,23 +83,3 @@
     left: 0;
   }
 </style>
-
-<div class="Header">
-  <div class="Header-container">
-    <div class="Header-content">
-      <div class="Header-logo">
-        <h1>Chiserstagram</h1>
-      </div>
-      <div class="Header-nav">
-        <ul>
-          <li>
-            <i class="fas fa-heart"></i>
-          </li>
-          <li>
-            <i class="fas fa-user-alt"></i>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
