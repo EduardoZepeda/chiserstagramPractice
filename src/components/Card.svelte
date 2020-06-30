@@ -1,15 +1,39 @@
 <script>
   import Comments from './Comments.svelte'
+  import Modal from './Modal.svelte'
+  import Share from './Share.svelte'
+
+  import {blur} from 'svelte/transition'
+
   export let username
   export let location
   export let photo
   export let postComment
   export let comments
   export let avatar
+
+  let isModal = false
+  let like = false
+  let bookmark = false
+
+  function toggleModal(){
+    isModal = !isModal
+  }
+
+  function handleLike(){
+    like = !like
+  }
 </script>
 
 
 <div class="Card">
+  {#if isModal}
+    <div transition:blur>
+      <Modal>
+        <Share on:click={toggleModal}></Share>
+      </Modal>
+    </div>
+  {/if}
   <div class="Card-container">
     <div class="Card-header">
       <div class="Card-user">
@@ -24,17 +48,24 @@
       </div>
     </div>
     <div class="Card-photo">
-      <figure>
+      <figure on:dblclick={handleLike}>
         <img src={photo} alt={username}>
       </figure>
     </div>
     <div class="Card-icons">
       <div class="Card-icons-first">
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-paper-plane"></i>
+        <i class="fas fa-heart"
+          class:active-like={like}
+          on:click={handleLike}
+        ></i>
+        <i class="fas fa-paper-plane" on:click={toggleModal}></i>
       </div>
       <div class="Card-icons-second">
-        <i class="fas fa-bookmark"></i>
+        <i class="fas fa-bookmark"
+          class:active-bookmark={bookmark}
+          on:click={()=>bookmark = !bookmark}
+
+        ></i>
       </div>
     </div>
     <div class="Card-description">
