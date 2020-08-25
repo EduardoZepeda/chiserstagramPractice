@@ -7,7 +7,7 @@
     <div class="Footer-copy">
       <p>
         <span class="copyleft">©</span>
-        {currentYear} Pugstagram from Platzi
+        {currentYear} Chiserstagram is based on Pugstagram from Platzi
       </p>
     </div>
   </div>
