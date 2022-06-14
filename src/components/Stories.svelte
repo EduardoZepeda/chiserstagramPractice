@@ -7,9 +7,9 @@
     <div class="Stories-items">
       <div class="Stories-item">
         <div class="Stories-item-box">
-          <img src="../../public/images/yo.jpg" alt=""/>
+          <img src="../../public/images/yo.jpg" alt="" />
         </div>
-        <h2>neon_affogato <span>10 hours ago</span></h2>
+        <h2>prox.sea <span>10 hours ago</span></h2>
       </div>
     </div>
   </div>

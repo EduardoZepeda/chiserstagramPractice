@@ -25,6 +25,24 @@ module.exports = {
         use: {
           loader: 'svelte-loader'
         }
+      },
+      {
+        test: /\.(jpg|png|gif|jpeg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]',
+          },
+        },
+      },
+      {
+        test: /\.json$/,
+        loader: 'url-loader',
+        options: {
+          limit: false,
+          name: '[path][name].[ext]',
+        },
+        type: 'javascript/auto'
       }
     ]
   },

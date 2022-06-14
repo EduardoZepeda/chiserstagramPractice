@@ -4,9 +4,11 @@
   import Sidebar from "../components/Sidebar.svelte";
   import TimeLine from "../components/TimeLine.svelte";
   import { onMount } from "svelte";
+  import posts from "../../public/api/posts.json";
+  require.context("../../public/images", false, /\.(jpg|png|gif|jpeg)$/);
 
   let data = {};
-  const API = "/public/api/posts.json";
+  const API = posts;
 
   onMount(async () => {
     const response = await fetch(API);

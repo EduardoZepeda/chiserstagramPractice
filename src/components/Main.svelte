@@ -1,3 +1,9 @@
+<div class="Main">
+  <div class="Main-container">
+    <slot />
+  </div>
+</div>
+
 <style>
   .Main {
     display: grid;
@@ -11,10 +17,13 @@
     grid-gap: 2em;
     padding: 2em 0;
   }
+  @media (max-width: 768px) {
+    .Main-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2em;
+      padding: 2em 0;
+      margin: 2em;
+    }
+  }
 </style>
-
-<div class="Main">
-  <div class="Main-container">
-    <slot/>
-  </div>
-</div>
